@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Практическая задача №1</h3>
+<p id="res"></p>
+
+<script>
+let str = '123 45.6 ..7 89.0 1...2';
+let matches = str.match(/[\d.]+/g);
+
+document.getElementById("res").innerHTML = "Найдено: " + matches;
+</script>
+</body>
+</html>

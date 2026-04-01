@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="res"></p>
+
+<script>
+let str1 = 'a1a a2a a3a a4a a5a aba aca';
+let str2 = 'a1a a22a a333a a4444a a55555a aba aca';
+let str3 = 'aa a1a a22a a333a a4444a a55555a aba aca';
+let str4 = 'avb a1b a2b a3b a4b a5b abb acb';
+let str5 = 'ave a#b a2b a$b a4b a5b a-b acb';
+let str6 = 'ave a#a a2a a$a a4a a5a a-a aca';
+
+let result = `
+№1: ${str1.match(/a\da/g)} <br>
+№2: ${str2.match(/a\d+a/g)} <br>
+№3: ${str3.match(/a\d*a/g)} <br>
+№4: ${str4.match(/a[^0-9\s]b/g)} <br>
+№5: ${str5.match(/a[^a-zA-Z0-9\s]b/g)} <br>
+№6: ${str6.replace(/\s/g, '!')}
+`;
+
+document.getElementById("res").innerHTML = result;
+</script>
+
+</body>
+</html>

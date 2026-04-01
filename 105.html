@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Задача №1</h3>
+<p id="res"></p>
+
+<script>
+let str = 'wйw wяw wёw wqw';
+let matches = str.match(/w[а-яёА-ЯЁ]w/g);
+
+document.getElementById("res").innerHTML = "Найдено: " + matches;
+</script>
+</body>
+</html>

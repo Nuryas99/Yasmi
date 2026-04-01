@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Задача №1</h3>
+<p id="res"></p>
+
+<script>
+let str = 'x[]z x[[]]z x()z';
+let matches = str.match(/x[\[\]]*z/g);
+
+document.getElementById("res").innerHTML = "Найдено: " + matches;
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Задача №1</h3>
+<p id="res"></p>
+
+<script>
+let str = '1a2 1e2 1x2 123 1-2';
+let matches = str.match(/1[^ex]2/g);
+
+document.getElementById("res").innerHTML = "Найдено: " + matches;
+</script>
+</body>
+</html>

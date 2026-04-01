@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Задача №1</h3>
+<p id="res"></p>
+
+<script>
+let str = '^xx axx ^zz bkk @ss';
+let matches = str.match(/[\^@][a-zA-Z]{2}/g);
+
+document.getElementById("res").innerHTML = "Найдено: " + matches;
+</script>
+</body>
+</html>
